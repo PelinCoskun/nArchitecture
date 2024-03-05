@@ -32,7 +32,7 @@ namespace Application
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
 
-            services.AddScoped<IAuthService,AuthManager>();
+           // services.AddScoped<IAuthService,AuthManager>();
 
 
             return services;
